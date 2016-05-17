@@ -18,12 +18,3 @@ def test_add_to_cart_from_second_page(app):
     app.go_to_cart()
     assert app.is_added_to_cart()
     app.remove_from_cart()
-
-
-def test_add_to_cart_from_third_page(app):
-    app.go_to_shop_from_cart()
-    app.choose_item_from_third_page(Sizes.Size110())
-    app.add_to_cart()
-    app.go_to_cart()
-    assert app.is_added_to_cart()
-    app.remove_from_cart()

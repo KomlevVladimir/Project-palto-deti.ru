@@ -77,8 +77,8 @@ class FirstPage(Page):
 
     @property
     def item_link(self):
-        self.wait.until(presence_of_element_located((By.CLASS_NAME, "post-389")))
-        return self.driver.find_element_by_class_name("post-389")
+        self.wait.until(presence_of_element_located((By.CLASS_NAME, "post-477")))
+        return self.driver.find_element_by_class_name("post-477")
 
     @property
     def is_this_page(self):
